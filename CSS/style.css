@@ -4,6 +4,28 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: red;
+.container {
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-template-rows: 100px auto 100px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container div {
+    border: 5px solid black;
+}
+
+.container div:first-child {
+    grid-area: 1 / 1 / 2 / 4;
+    background-color: yellow;
+}
+
+.container div:last-child {
+    grid-area: 3 / 1 / 4 / 4;
+    background-color: green;
+}
+
+.left-side, .right-side {
+    background-color: purple;
 }
