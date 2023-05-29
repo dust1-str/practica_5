@@ -13,7 +13,11 @@
 }
 
 .container div {
-    border: 5px solid black;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
 }
 
 .container div:first-child {
@@ -28,4 +32,8 @@
 
 .left-side, .right-side {
     background-color: purple;
+}
+
+.container div:nth-child(3) {
+    background-color: aqua;
 }
